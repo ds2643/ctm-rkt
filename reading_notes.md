@@ -22,6 +22,4 @@
 - explicit state: "memory is needed for functions that can change their behavior and learn from their past"; may be represented with variables (corresponding to memory cells);
 - having concurrency and state in a program simultaneously is challenging because the order of thread execution is not gaurenteed
 - non-determinism: variability in order of execution; "exists because we lack knowledge of the exact time when each basic operation executes"; message passing concurrency addresses this problem by allowing coordination between threads; race conditions: observable nondeterminism; interleaving of threads: threads take turns executing
-- atomicity: means of managing program concurrency and state; an operation is atomic if no intermediate states can be observed (execution represents a one-step transition to the final state);
--
--
+- atomicity: means of managing program concurrency and state; an operation is atomic if no intermediate states can be observed (execution represents a one-step transition to the final state)
