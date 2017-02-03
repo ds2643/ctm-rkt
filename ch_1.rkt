@@ -1,5 +1,7 @@
 #lang racket
 
+;; CTM (1) translated to Racket Scheme
+
 ; recursive factorial definition (1.3)
 ; non-tail-recursive
 
@@ -76,6 +78,6 @@
    (let ([x 99])
      (println (number->string (* x x))))))
 
-;; implementing analog to object and class (1.13, 1.14)
+;; implementing analogs to object and class (1.13, 1.14)
 ;; TODO: complete
 
