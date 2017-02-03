@@ -1,0 +1,3 @@
+#lang slideshow
+
+(circle 0)
