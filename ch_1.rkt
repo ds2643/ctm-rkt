@@ -51,10 +51,12 @@
        (add-list (shift-left l) (shift-right l)))]))
 
 ;; lazily-evaluated pascal sequence (1.8)
-;; TODO: complete definition using delay and force 
 
-(define (lazy-pascal n)
-  null)
+(define (lazy-pascal xs)
+  (stream-cons xs
+               (lazy-pascal (add-list
+                             (shift-left xs)
+                             (shift-right xs)))))
 
 ;; illustrating higher-order function approach to generics (1.9)
 
